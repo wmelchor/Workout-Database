@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/WelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Work it!"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/ExplanationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WelcomeText"
+        android:text="This a workout app that allows you to manually add/edit workouts that you want
+do. Tap 'Do a workout' to start a workout, or tap 'Setup/Edit Mode' to either create new workouts or
+edit existing workouts"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/doWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ExplanationText"
+        android:textSize="18dp"
+        android:text="Do a Workout"/>
+
+    <Button
+        android:id="@+id/setupEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/doWorkout"
+        android:textSize="18dp"
+        android:text="Setup/Edit Mode"/>
+
+</RelativeLayout>

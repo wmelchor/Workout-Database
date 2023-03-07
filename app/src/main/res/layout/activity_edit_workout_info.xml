@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterWorkoutInfo">
+
+    <TextView
+        android:id="@+id/WelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update workout\n"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/workoutName"
+        android:layout_below="@+id/WelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/inputWorkout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/workoutName"
+        android:layout_above="@+id/rep"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/rep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workoutName"
+        android:text="Reps: "
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/inputReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputWorkout"
+        android:layout_toRightOf="@+id/rep"
+        android:inputType="number"
+        android:hint=""
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rep"
+        android:text="Sets: "
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/inputSets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputReps"
+        android:layout_toRightOf="@+id/set"
+        android:inputType="number"
+        android:hint=""
+        android:textSize="15dp" />
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set"
+        android:text="Weight: "
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/inputWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputSets"
+        android:layout_toRightOf="@+id/weight"
+        android:inputType="number"
+        android:hint=""
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weight"
+        android:text="Notes: "
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/inputNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputWeight"
+        android:layout_toRightOf="@+id/weight"
+        android:inputType="text"
+        android:hint=""
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notes"
+        android:text="Update Exercise in Workout"
+        android:onClick="updateInfo"/>
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update"
+        android:text="Cancel"
+        android:onClick="cancel"/>
+
+</RelativeLayout>
